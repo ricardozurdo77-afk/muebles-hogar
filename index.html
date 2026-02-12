@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NÖRA | Muebles de Diseño para el Hogar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="brand">
+    <h1 class="logo">NÖRA</h1>
+    <span class="tagline">Muebles de diseño para el hogar</span>
+  </div>
+  <nav class="nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#colecciones">Colecciones</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#carrito">Carrito (<span id="cart-count">0</span>)</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero-content">
+    <h2>Diseño que transforma tu espacio</h2>
+    <p>Muebles contemporáneos creados para brindar confort, estilo y funcionalidad.</p>
+    <a href="#catalogo" class="btn-primary">Ver catálogo</a>
+  </div>
+</section>
+
+<section class="section light" id="colecciones">
+  <h2 class="section-title">Colecciones</h2>
+  <div class="collections">
+    <div class="collection">
+      <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7" alt="Sala Moderna">
+      <h3>Sala Moderna</h3>
+      <p>Líneas limpias y máxima comodidad.</p>
+    </div>
+    <div class="collection">
+      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="Comedor Elegante">
+      <h3>Comedor Elegante</h3>
+      <p>Diseños ideales para compartir.</p>
+    </div>
+    <div class="collection">
+      <img src="https://images.unsplash.com/photo-1582582494700-68d387b48f7e" alt="Recámara Premium">
+      <h3>Recámara Premium</h3>
+      <p>Descanso y estilo en equilibrio.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="catalogo">
+  <h2 class="section-title">Catálogo</h2>
+  <div class="products">
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc" alt="Sofá">
+      <h3>Sofá Növa</h3>
+      <p class="description">Sofá de tres plazas con tapizado premium.</p>
+      <span class="price">$12,500 MXN</span>
+      <button onclick="addToCart('Sofá Növa',12500)">Agregar al carrito</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511" alt="Comedor">
+      <h3>Comedor Luma</h3>
+      <p class="description">Mesa de madera natural con seis sillas.</p>
+      <span class="price">$18,900 MXN</span>
+      <button onclick="addToCart('Comedor Luma',18900)">Agregar al carrito</button>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1582582494700-68d387b48f7e" alt="Cama">
+      <h3>Cama Aura</h3>
+      <p class="description">Cama king size con cabecera acolchada.</p>
+      <span class="price">$22,300 MXN</span>
+      <button onclick="addToCart('Cama Aura',22300)">Agregar al carrito</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="section light" id="carrito">
+  <h2 class="section-title">Carrito de Compras</h2>
+  <ul id="cart-items" class="cart-list"></ul>
+  <p id="total" class="total"></p>
+  <button class="checkout">Finalizar compra (simulada)</button>
+</section>
+
+<section class="section" id="nosotros">
+  <h2 class="section-title">Nosotros</h2>
+  <p class="about">
+    NÖRA es una marca especializada en muebles de diseño para el hogar,
+    combinando estética contemporánea, funcionalidad y materiales de alta calidad.
+  </p>
+</section>
+
+<section class="section light" id="contacto">
+  <h2 class="section-title">Contacto</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Nombre" required>
+    <input type="email" placeholder="Correo electrónico" required>
+    <textarea placeholder="Mensaje" rows="4"></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+
+<footer class="footer"> 
+  © 2026 NÖRA | Muebles de diseño para el hogar
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
